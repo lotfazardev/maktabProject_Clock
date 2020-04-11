@@ -16,6 +16,8 @@
 .clock-layout{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .clock{
     font-size: 5vw;
@@ -23,8 +25,9 @@
 .btns-layout{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     white-space: nowrap;
+    margin-top: 1vw;
 }
 .btns{
     width: 10vw;
@@ -34,4 +37,12 @@
     border-radius: 20px;
     background-color: #111;
     color: #fff;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+#btns-stopWatch{
+    display: none;
+}
+#btns-permission{
+    display: none;
 }
