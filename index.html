@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <div class="main-layout">
-            <div class="clock-layout">
-                    <div class="clock">
-                        <h1 id="clock-value">12:12:12</h1>
-                    </div>
-                <div class="btns-layout" id="btns-layout">
-                    <button onclick="change12to24()" class="btns" id="change12to24">12/24</button>
-                    <button onclick="permission()" class="btns">stop watch</button>
-                    <button onclick="timer()" class="btns">timer</button>
-                </div>
-                <div class="btns-layout" id="btns-permission">
-                    <button onclick="stopWatch()" class="btns" id="stopWatch">Start</button>
-                    <button onclick="back()" class="btns" id="back">Back</button>
-                </div>
-                <div class="btns-layout" id="btns-stopWatch">
-                    <button onclick="stop()" class="btns" id="stop">Stop</button>
-                    <button onclick="restart()" class="btns" id="restart">Restart</button>
-                    <button onclick="lap()" class="btns" id="lap">Lap</button>
-                </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main-layout">
+        <div id="lap-layout">
+            <span id="lap-header">laps Time:</span>
+        </div>
+        <div class="clock-layout">
+            <div class="clock" id="clock">
+                <h1 id="clock-value">12:12:12</h1>
+            </div>
+            <div class="btns-layout" id="btns-layout">
+                <button onclick="change12to24()" class="btns" id="change12to24">12/24</button>
+                <button onclick="permission()" class="btns">stop watch</button>
+                <button onclick="timer()" class="btns">timer</button>
+            </div>
+            <div class="btns-layout" id="btns-permission">
+                <button onclick="stopWatch()" class="btns" id="stopWatch">Start</button>
+                <button onclick="back()" class="btns" id="back">Back</button>
+            </div>
+            <div class="btns-layout" id="btns-stopWatch">
+                <button onclick="stop()" class="btns" id="stop">Stop</button>
+                <button onclick="restart()" class="btns" id="restart">Restart</button>
+                <button onclick="lap()" class="btns" id="lap">Lap</button>
+            </div>
+            <div class="btns-layout" id="btns-timer">
+                <button onclick="setAndResetTimer()" class="btns" id="setTimer">set</button>
+                <button onclick="stopTimer()" class="btns" id="stopTimer">stop</button>
             </div>
         </div>
-        <script src="./script.js"></script>
-    </body>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
 </html>
